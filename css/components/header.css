@@ -1,2 +1,51 @@
-/* base */
-@import "../base/base.css";
+.header {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #f83766;
+}
+
+.header .col-12 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  height: 35px;
+}
+
+.header nav {
+  display: none;
+  gap: 25px;
+}
+
+.header nav > a {
+  font-size: 14px;
+  text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
+  color: #ffff;
+}
+
+.header .socials > a {
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  font-size: 16px;
+  color: #ffff;
+  text-decoration: none;
+  text-align: center;
+}
+
+.header .hamburger {
+  font-size: 90px;
+}
+
+@media (min-width: 992px) {
+  .header nav {
+    display: flex;
+  }
+}
+
+.socials > a {
+  gap: 90px;
+}
